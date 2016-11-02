@@ -1,0 +1,3384 @@
+@charset "UTF-8";
+/*!
+Laive - Royal Hotel
+01.Out.2016
+*/
+@font-face {
+  font-family: 'fontello';
+  src: url("../fonts/fontello/fontello.eot?4089732");
+  src: url("../fonts/fontello/fontello.eot?4089732#iefix") format("embedded-opentype"), url("../fonts/fontello/fontello.woff?4089732") format("woff"), url("../fonts/fontello/fontello.ttf?4089732") format("truetype"), url("../fonts/fontello/fontello.svg?4089732#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?4089732#fontello') format('svg');
+  }
+}
+*/
+/* line 22, ../assets/sass/_fontello.scss */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+/* line 53, ../assets/sass/_fontello.scss */
+.icon-search:before {
+  content: '\e800';
+}
+
+/* '¯áÇ' */
+/* line 54, ../assets/sass/_fontello.scss */
+.icon-mail:before {
+  content: '\e801';
+}
+
+/* '¯áü' */
+/* line 55, ../assets/sass/_fontello.scss */
+.icon-heart:before {
+  content: '\e802';
+}
+
+/* '¯áé' */
+/* line 56, ../assets/sass/_fontello.scss */
+.icon-heart-empty:before {
+  content: '\e803';
+}
+
+/* '¯áâ' */
+/* line 57, ../assets/sass/_fontello.scss */
+.icon-star-empty:before {
+  content: '\e804';
+}
+
+/* '¯áä' */
+/* line 58, ../assets/sass/_fontello.scss */
+.icon-star:before {
+  content: '\e805';
+}
+
+/* '¯áà' */
+/* line 59, ../assets/sass/_fontello.scss */
+.icon-user:before {
+  content: '\e806';
+}
+
+/* '¯áå' */
+/* line 60, ../assets/sass/_fontello.scss */
+.icon-users:before {
+  content: '\e807';
+}
+
+/* '¯áç' */
+/* line 61, ../assets/sass/_fontello.scss */
+.icon-user-add:before {
+  content: '\e808';
+}
+
+/* '¯áê' */
+/* line 62, ../assets/sass/_fontello.scss */
+.icon-picture:before {
+  content: '\e809';
+}
+
+/* '¯áë' */
+/* line 63, ../assets/sass/_fontello.scss */
+.icon-camera:before {
+  content: '\e80a';
+}
+
+/* '¯áè' */
+/* line 64, ../assets/sass/_fontello.scss */
+.icon-layout:before {
+  content: '\e80b';
+}
+
+/* '¯áï' */
+/* line 65, ../assets/sass/_fontello.scss */
+.icon-menu:before {
+  content: '\e80c';
+}
+
+/* '¯áî' */
+/* line 66, ../assets/sass/_fontello.scss */
+.icon-check:before {
+  content: '\e80d';
+}
+
+/* '¯áì' */
+/* line 67, ../assets/sass/_fontello.scss */
+.icon-cancel:before {
+  content: '\e80e';
+}
+
+/* '¯áÄ' */
+/* line 68, ../assets/sass/_fontello.scss */
+.icon-tag:before {
+  content: '\e80f';
+}
+
+/* '¯áÅ' */
+/* line 69, ../assets/sass/_fontello.scss */
+.icon-eye:before {
+  content: '\e810';
+}
+
+/* '¯áÉ' */
+/* line 70, ../assets/sass/_fontello.scss */
+.icon-lock-open:before {
+  content: '\e811';
+}
+
+/* '¯áæ' */
+/* line 71, ../assets/sass/_fontello.scss */
+.icon-lock:before {
+  content: '\e812';
+}
+
+/* '¯áÆ' */
+/* line 72, ../assets/sass/_fontello.scss */
+.icon-attach:before {
+  content: '\e813';
+}
+
+/* '¯áô' */
+/* line 73, ../assets/sass/_fontello.scss */
+.icon-link:before {
+  content: '\e814';
+}
+
+/* '¯áö' */
+/* line 74, ../assets/sass/_fontello.scss */
+.icon-home:before {
+  content: '\e815';
+}
+
+/* '¯áò' */
+/* line 75, ../assets/sass/_fontello.scss */
+.icon-info-circled:before {
+  content: '\e816';
+}
+
+/* '¯áû' */
+/* line 76, ../assets/sass/_fontello.scss */
+.icon-help-circled:before {
+  content: '\e817';
+}
+
+/* '¯áù' */
+/* line 77, ../assets/sass/_fontello.scss */
+.icon-help:before {
+  content: '\e818';
+}
+
+/* '¯áÿ' */
+/* line 78, ../assets/sass/_fontello.scss */
+.icon-info:before {
+  content: '\e819';
+}
+
+/* '¯áÖ' */
+/* line 79, ../assets/sass/_fontello.scss */
+.icon-bookmark:before {
+  content: '\e81a';
+}
+
+/* '¯áÜ' */
+/* line 80, ../assets/sass/_fontello.scss */
+.icon-bookmarks:before {
+  content: '\e81b';
+}
+
+/* '¯áø' */
+/* line 81, ../assets/sass/_fontello.scss */
+.icon-flag:before {
+  content: '\e81c';
+}
+
+/* '¯á£' */
+/* line 82, ../assets/sass/_fontello.scss */
+.icon-thumbs-up:before {
+  content: '\e81d';
+}
+
+/* '¯áØ' */
+/* line 83, ../assets/sass/_fontello.scss */
+.icon-thumbs-down:before {
+  content: '\e81e';
+}
+
+/* '¯á×' */
+/* line 84, ../assets/sass/_fontello.scss */
+.icon-quote:before {
+  content: '\e81f';
+}
+
+/* '¯áƒ' */
+/* line 85, ../assets/sass/_fontello.scss */
+.icon-export:before {
+  content: '\e820';
+}
+
+/* '¯áá' */
+/* line 86, ../assets/sass/_fontello.scss */
+.icon-pencil:before {
+  content: '\e821';
+}
+
+/* '¯áí' */
+/* line 87, ../assets/sass/_fontello.scss */
+.icon-feather:before {
+  content: '\e822';
+}
+
+/* '¯áó' */
+/* line 88, ../assets/sass/_fontello.scss */
+.icon-keyboard:before {
+  content: '\e823';
+}
+
+/* '¯áú' */
+/* line 89, ../assets/sass/_fontello.scss */
+.icon-retweet:before {
+  content: '\e824';
+}
+
+/* '¯áñ' */
+/* line 90, ../assets/sass/_fontello.scss */
+.icon-comment:before {
+  content: '\e825';
+}
+
+/* '¯áÑ' */
+/* line 91, ../assets/sass/_fontello.scss */
+.icon-book:before {
+  content: '\e826';
+}
+
+/* '¯áª' */
+/* line 92, ../assets/sass/_fontello.scss */
+.icon-book-open:before {
+  content: '\e827';
+}
+
+/* '¯áº' */
+/* line 93, ../assets/sass/_fontello.scss */
+.icon-newspaper:before {
+  content: '\e828';
+}
+
+/* '¯á¿' */
+/* line 94, ../assets/sass/_fontello.scss */
+.icon-doc-text-inv:before {
+  content: '\e829';
+}
+
+/* '¯á®' */
+/* line 95, ../assets/sass/_fontello.scss */
+.icon-doc-text:before {
+  content: '\e82a';
+}
+
+/* '¯á¬' */
+/* line 96, ../assets/sass/_fontello.scss */
+.icon-doc-landscape:before {
+  content: '\e82b';
+}
+
+/* '¯á½' */
+/* line 97, ../assets/sass/_fontello.scss */
+.icon-docs:before {
+  content: '\e82c';
+}
+
+/* '¯á¼' */
+/* line 98, ../assets/sass/_fontello.scss */
+.icon-doc:before {
+  content: '\e82d';
+}
+
+/* '¯á¡' */
+/* line 99, ../assets/sass/_fontello.scss */
+.icon-trash:before {
+  content: '\e82e';
+}
+
+/* '¯á«' */
+/* line 100, ../assets/sass/_fontello.scss */
+.icon-cup:before {
+  content: '\e82f';
+}
+
+/* '¯á»' */
+/* line 101, ../assets/sass/_fontello.scss */
+.icon-compass:before {
+  content: '\e830';
+}
+
+/* '¯á░' */
+/* line 102, ../assets/sass/_fontello.scss */
+.icon-direction:before {
+  content: '\e831';
+}
+
+/* '¯á▒' */
+/* line 103, ../assets/sass/_fontello.scss */
+.icon-map:before {
+  content: '\e832';
+}
+
+/* '¯á▓' */
+/* line 104, ../assets/sass/_fontello.scss */
+.icon-location:before {
+  content: '\e833';
+}
+
+/* '¯á│' */
+/* line 105, ../assets/sass/_fontello.scss */
+.icon-address:before {
+  content: '\e834';
+}
+
+/* '¯á┤' */
+/* line 106, ../assets/sass/_fontello.scss */
+.icon-vcard:before {
+  content: '\e835';
+}
+
+/* '¯áÁ' */
+/* line 107, ../assets/sass/_fontello.scss */
+.icon-alert:before {
+  content: '\e836';
+}
+
+/* '¯áÂ' */
+/* line 108, ../assets/sass/_fontello.scss */
+.icon-attention:before {
+  content: '\e837';
+}
+
+/* '¯áÀ' */
+/* line 109, ../assets/sass/_fontello.scss */
+.icon-bell:before {
+  content: '\e838';
+}
+
+/* '¯á©' */
+/* line 110, ../assets/sass/_fontello.scss */
+.icon-chat:before {
+  content: '\e839';
+}
+
+/* '¯á╣' */
+/* line 111, ../assets/sass/_fontello.scss */
+.icon-down-open-big:before {
+  content: '\e83a';
+}
+
+/* '¯á║' */
+/* line 112, ../assets/sass/_fontello.scss */
+.icon-left-open-big:before {
+  content: '\e83b';
+}
+
+/* '¯á╗' */
+/* line 113, ../assets/sass/_fontello.scss */
+.icon-right-open-big:before {
+  content: '\e83c';
+}
+
+/* '¯á╝' */
+/* line 114, ../assets/sass/_fontello.scss */
+.icon-up-open-big:before {
+  content: '\e83d';
+}
+
+/* '¯á¢' */
+/* line 115, ../assets/sass/_fontello.scss */
+.icon-basket:before {
+  content: '\e83e';
+}
+
+/* '¯á¥' */
+/* line 116, ../assets/sass/_fontello.scss */
+.icon-bag:before {
+  content: '\e83f';
+}
+
+/* '¯á┐' */
+/* line 117, ../assets/sass/_fontello.scss */
+.icon-calendar:before {
+  content: '\e840';
+}
+
+/* '¯íÇ' */
+/* line 118, ../assets/sass/_fontello.scss */
+.icon-login:before {
+  content: '\e841';
+}
+
+/* '¯íü' */
+/* line 119, ../assets/sass/_fontello.scss */
+.icon-logout:before {
+  content: '\e842';
+}
+
+/* '¯íé' */
+/* line 120, ../assets/sass/_fontello.scss */
+.icon-sound:before {
+  content: '\e843';
+}
+
+/* '¯íâ' */
+/* line 121, ../assets/sass/_fontello.scss */
+.icon-clock:before {
+  content: '\e844';
+}
+
+/* '¯íä' */
+/* line 122, ../assets/sass/_fontello.scss */
+.icon-phone:before {
+  content: '\e845';
+}
+
+/* '¯íà' */
+/* line 123, ../assets/sass/_fontello.scss */
+.icon-lamp:before {
+  content: '\e846';
+}
+
+/* '¯íå' */
+/* line 124, ../assets/sass/_fontello.scss */
+.icon-ccw:before {
+  content: '\e847';
+}
+
+/* '¯íç' */
+/* line 125, ../assets/sass/_fontello.scss */
+.icon-cw:before {
+  content: '\e848';
+}
+
+/* '¯íê' */
+/* line 126, ../assets/sass/_fontello.scss */
+.icon-arrows-ccw:before {
+  content: '\e849';
+}
+
+/* '¯íë' */
+/* line 127, ../assets/sass/_fontello.scss */
+.icon-level-down:before {
+  content: '\e84a';
+}
+
+/* '¯íè' */
+/* line 128, ../assets/sass/_fontello.scss */
+.icon-level-up:before {
+  content: '\e84b';
+}
+
+/* '¯íï' */
+/* line 129, ../assets/sass/_fontello.scss */
+.icon-shuffle:before {
+  content: '\e84c';
+}
+
+/* '¯íî' */
+/* line 130, ../assets/sass/_fontello.scss */
+.icon-globe:before {
+  content: '\e84d';
+}
+
+/* '¯íì' */
+/* line 131, ../assets/sass/_fontello.scss */
+.icon-network:before {
+  content: '\e84e';
+}
+
+/* '¯íÄ' */
+/* line 132, ../assets/sass/_fontello.scss */
+.icon-trophy:before {
+  content: '\e84f';
+}
+
+/* '¯íÅ' */
+/* line 133, ../assets/sass/_fontello.scss */
+.icon-air:before {
+  content: '\e850';
+}
+
+/* '¯íÉ' */
+/* line 134, ../assets/sass/_fontello.scss */
+.icon-water:before {
+  content: '\e851';
+}
+
+/* '¯íæ' */
+/* line 135, ../assets/sass/_fontello.scss */
+.icon-droplet:before {
+  content: '\e852';
+}
+
+/* '¯íÆ' */
+/* line 136, ../assets/sass/_fontello.scss */
+.icon-leaf:before {
+  content: '\e853';
+}
+
+/* '¯íô' */
+/* line 137, ../assets/sass/_fontello.scss */
+.icon-paper-plane:before {
+  content: '\e854';
+}
+
+/* '¯íö' */
+/* line 138, ../assets/sass/_fontello.scss */
+.icon-flight:before {
+  content: '\e855';
+}
+
+/* '¯íò' */
+/* line 139, ../assets/sass/_fontello.scss */
+.icon-flash:before {
+  content: '\e856';
+}
+
+/* '¯íû' */
+/* line 140, ../assets/sass/_fontello.scss */
+.icon-moon:before {
+  content: '\e857';
+}
+
+/* '¯íù' */
+/* line 141, ../assets/sass/_fontello.scss */
+.icon-graduation-cap:before {
+  content: '\e858';
+}
+
+/* '¯íÿ' */
+/* line 142, ../assets/sass/_fontello.scss */
+.icon-lifebuoy:before {
+  content: '\e859';
+}
+
+/* '¯íÖ' */
+/* line 143, ../assets/sass/_fontello.scss */
+.icon-mouse:before {
+  content: '\e85a';
+}
+
+/* '¯íÜ' */
+/* line 144, ../assets/sass/_fontello.scss */
+.icon-briefcase:before {
+  content: '\e85b';
+}
+
+/* '¯íø' */
+/* line 145, ../assets/sass/_fontello.scss */
+.icon-suitcase:before {
+  content: '\e85c';
+}
+
+/* '¯í£' */
+/* line 146, ../assets/sass/_fontello.scss */
+.icon-th-list:before {
+  content: '\e85d';
+}
+
+/* '¯íØ' */
+/* line 147, ../assets/sass/_fontello.scss */
+.icon-th:before {
+  content: '\e85e';
+}
+
+/* '¯í×' */
+/* line 148, ../assets/sass/_fontello.scss */
+.icon-th-large:before {
+  content: '\e85f';
+}
+
+/* '¯íƒ' */
+/* line 149, ../assets/sass/_fontello.scss */
+.icon-search-1:before {
+  content: '\e860';
+}
+
+/* '¯íá' */
+/* line 150, ../assets/sass/_fontello.scss */
+.icon-signal:before {
+  content: '\e861';
+}
+
+/* '¯íí' */
+/* line 151, ../assets/sass/_fontello.scss */
+.icon-arrows-cw:before {
+  content: '\e862';
+}
+
+/* '¯íó' */
+/* line 152, ../assets/sass/_fontello.scss */
+.icon-lock-1:before {
+  content: '\e863';
+}
+
+/* '¯íú' */
+/* line 153, ../assets/sass/_fontello.scss */
+.icon-attach-1:before {
+  content: '\e864';
+}
+
+/* '¯íñ' */
+/* line 154, ../assets/sass/_fontello.scss */
+.icon-music:before {
+  content: '\e865';
+}
+
+/* '¯íÑ' */
+/* line 155, ../assets/sass/_fontello.scss */
+.icon-search-2:before {
+  content: '\e866';
+}
+
+/* '¯íª' */
+/* line 156, ../assets/sass/_fontello.scss */
+.icon-mail-1:before {
+  content: '\e867';
+}
+
+/* '¯íº' */
+/* line 157, ../assets/sass/_fontello.scss */
+.icon-heart-1:before {
+  content: '\e868';
+}
+
+/* '¯í¿' */
+/* line 158, ../assets/sass/_fontello.scss */
+.icon-star-1:before {
+  content: '\e869';
+}
+
+/* '¯í®' */
+/* line 159, ../assets/sass/_fontello.scss */
+.icon-user-1:before {
+  content: '\e86a';
+}
+
+/* '¯í¬' */
+/* line 160, ../assets/sass/_fontello.scss */
+.icon-videocam:before {
+  content: '\e86b';
+}
+
+/* '¯í½' */
+/* line 161, ../assets/sass/_fontello.scss */
+.icon-camera-1:before {
+  content: '\e86c';
+}
+
+/* '¯í¼' */
+/* line 162, ../assets/sass/_fontello.scss */
+.icon-photo:before {
+  content: '\e86d';
+}
+
+/* '¯í¡' */
+/* line 163, ../assets/sass/_fontello.scss */
+.icon-attach-2:before {
+  content: '\e86e';
+}
+
+/* '¯í«' */
+/* line 164, ../assets/sass/_fontello.scss */
+.icon-eye-1:before {
+  content: '\e86f';
+}
+
+/* '¯í»' */
+/* line 165, ../assets/sass/_fontello.scss */
+.icon-thumbs-up-1:before {
+  content: '\e870';
+}
+
+/* '¯í░' */
+/* line 166, ../assets/sass/_fontello.scss */
+.icon-pencil-1:before {
+  content: '\e871';
+}
+
+/* '¯í▒' */
+/* line 167, ../assets/sass/_fontello.scss */
+.icon-location-1:before {
+  content: '\e872';
+}
+
+/* '¯í▓' */
+/* line 168, ../assets/sass/_fontello.scss */
+.icon-cup-1:before {
+  content: '\e873';
+}
+
+/* '¯í│' */
+/* line 169, ../assets/sass/_fontello.scss */
+.icon-trash-1:before {
+  content: '\e874';
+}
+
+/* '¯í┤' */
+/* line 170, ../assets/sass/_fontello.scss */
+.icon-doc-1:before {
+  content: '\e875';
+}
+
+/* '¯íÁ' */
+/* line 171, ../assets/sass/_fontello.scss */
+.icon-key:before {
+  content: '\e876';
+}
+
+/* '¯íÂ' */
+/* line 172, ../assets/sass/_fontello.scss */
+.icon-database:before {
+  content: '\e877';
+}
+
+/* '¯íÀ' */
+/* line 173, ../assets/sass/_fontello.scss */
+.icon-megaphone:before {
+  content: '\e878';
+}
+
+/* '¯í©' */
+/* line 174, ../assets/sass/_fontello.scss */
+.icon-graduation-cap-1:before {
+  content: '\e879';
+}
+
+/* '¯í╣' */
+/* line 175, ../assets/sass/_fontello.scss */
+.icon-fire:before {
+  content: '\e87a';
+}
+
+/* '¯í║' */
+/* line 176, ../assets/sass/_fontello.scss */
+.icon-paper-plane-1:before {
+  content: '\e87b';
+}
+
+/* '¯í╗' */
+/* line 177, ../assets/sass/_fontello.scss */
+.icon-cloud:before {
+  content: '\e87c';
+}
+
+/* '¯í╝' */
+/* line 178, ../assets/sass/_fontello.scss */
+.icon-globe-1:before {
+  content: '\e87d';
+}
+
+/* '¯í¢' */
+/* line 179, ../assets/sass/_fontello.scss */
+.icon-inbox:before {
+  content: '\e87e';
+}
+
+/* '¯í¥' */
+/* line 180, ../assets/sass/_fontello.scss */
+.icon-cd:before {
+  content: '\e87f';
+}
+
+/* '¯í┐' */
+/* line 181, ../assets/sass/_fontello.scss */
+.icon-mobile:before {
+  content: '\e880';
+}
+
+/* '¯óÇ' */
+/* line 182, ../assets/sass/_fontello.scss */
+.icon-desktop:before {
+  content: '\e881';
+}
+
+/* '¯óü' */
+/* line 183, ../assets/sass/_fontello.scss */
+.icon-tv:before {
+  content: '\e882';
+}
+
+/* '¯óé' */
+/* line 184, ../assets/sass/_fontello.scss */
+.icon-lightbulb:before {
+  content: '\e883';
+}
+
+/* '¯óâ' */
+/* line 185, ../assets/sass/_fontello.scss */
+.icon-clock-1:before {
+  content: '\e884';
+}
+
+/* '¯óä' */
+/* line 186, ../assets/sass/_fontello.scss */
+.icon-sound-1:before {
+  content: '\e885';
+}
+
+/* '¯óà' */
+/* line 187, ../assets/sass/_fontello.scss */
+.icon-params:before {
+  content: '\e886';
+}
+
+/* '¯óå' */
+/* line 188, ../assets/sass/_fontello.scss */
+.icon-calendar-1:before {
+  content: '\e887';
+}
+
+/* '¯óç' */
+/* line 189, ../assets/sass/_fontello.scss */
+.icon-cog:before {
+  content: '\e888';
+}
+
+/* '¯óê' */
+/* line 190, ../assets/sass/_fontello.scss */
+.icon-note:before {
+  content: '\e889';
+}
+
+/* '¯óë' */
+/* line 191, ../assets/sass/_fontello.scss */
+.icon-beaker:before {
+  content: '\e88a';
+}
+
+/* '¯óè' */
+/* line 192, ../assets/sass/_fontello.scss */
+.icon-truck:before {
+  content: '\e88b';
+}
+
+/* '¯óï' */
+/* line 193, ../assets/sass/_fontello.scss */
+.icon-money:before {
+  content: '\e88c';
+}
+
+/* '¯óî' */
+/* line 194, ../assets/sass/_fontello.scss */
+.icon-shop:before {
+  content: '\e88d';
+}
+
+/* '¯óì' */
+/* line 195, ../assets/sass/_fontello.scss */
+.icon-diamond:before {
+  content: '\e88e';
+}
+
+/* '¯óÄ' */
+/* line 196, ../assets/sass/_fontello.scss */
+.icon-t-shirt:before {
+  content: '\e88f';
+}
+
+/* '¯óÅ' */
+/* line 197, ../assets/sass/_fontello.scss */
+.icon-wallet:before {
+  content: '\e890';
+}
+
+/* '¯óÉ' */
+/* line 198, ../assets/sass/_fontello.scss */
+.icon-food:before {
+  content: '\e891';
+}
+
+/* '¯óæ' */
+/* line 199, ../assets/sass/_fontello.scss */
+.icon-certificate:before {
+  content: '\e892';
+}
+
+/* '¯óÆ' */
+/* line 200, ../assets/sass/_fontello.scss */
+.icon-megaphone-1:before {
+  content: '\e893';
+}
+
+/* '¯óô' */
+/* line 201, ../assets/sass/_fontello.scss */
+.icon-gift:before {
+  content: '\e894';
+}
+
+/* '¯óö' */
+/* line 202, ../assets/sass/_fontello.scss */
+.icon-asl:before {
+  content: '\e895';
+}
+
+/* '¯óò' */
+/* line 203, ../assets/sass/_fontello.scss */
+.icon-glasses:before {
+  content: '\e896';
+}
+
+/* '¯óû' */
+/* line 204, ../assets/sass/_fontello.scss */
+.icon-adult:before {
+  content: '\e897';
+}
+
+/* '¯óù' */
+/* line 205, ../assets/sass/_fontello.scss */
+.icon-child:before {
+  content: '\e898';
+}
+
+/* '¯óÿ' */
+/* line 206, ../assets/sass/_fontello.scss */
+.icon-blind:before {
+  content: '\e899';
+}
+
+/* '¯óÖ' */
+/* line 207, ../assets/sass/_fontello.scss */
+.icon-guidedog:before {
+  content: '\e89a';
+}
+
+/* '¯óÜ' */
+/* line 208, ../assets/sass/_fontello.scss */
+.icon-accessibility:before {
+  content: '\e89b';
+}
+
+/* '¯óø' */
+/* line 209, ../assets/sass/_fontello.scss */
+.icon-universal-access:before {
+  content: '\e89c';
+}
+
+/* '¯ó£' */
+/* line 210, ../assets/sass/_fontello.scss */
+.icon-hearing-impaired:before {
+  content: '\e89d';
+}
+
+/* '¯óØ' */
+/* line 211, ../assets/sass/_fontello.scss */
+.icon-iphone-home:before {
+  content: '\e89e';
+}
+
+/* '¯ó×' */
+/* line 212, ../assets/sass/_fontello.scss */
+.icon-fire-1:before {
+  content: '\e89f';
+}
+
+/* '¯óƒ' */
+/* line 213, ../assets/sass/_fontello.scss */
+.icon-down-hand:before {
+  content: '\e8a0';
+}
+
+/* '¯óá' */
+/* line 214, ../assets/sass/_fontello.scss */
+.icon-left-hand:before {
+  content: '\e8a1';
+}
+
+/* '¯óí' */
+/* line 215, ../assets/sass/_fontello.scss */
+.icon-right-hand:before {
+  content: '\e8a2';
+}
+
+/* '¯óó' */
+/* line 216, ../assets/sass/_fontello.scss */
+.icon-up-hand:before {
+  content: '\e8a3';
+}
+
+/* '¯óú' */
+/* line 217, ../assets/sass/_fontello.scss */
+.icon-cw-1:before {
+  content: '\e8a4';
+}
+
+/* '¯óñ' */
+/* line 218, ../assets/sass/_fontello.scss */
+.icon-cw-circled:before {
+  content: '\e8a5';
+}
+
+/* '¯óÑ' */
+/* line 219, ../assets/sass/_fontello.scss */
+.icon-arrows-cw-1:before {
+  content: '\e8a6';
+}
+
+/* '¯óª' */
+/* line 220, ../assets/sass/_fontello.scss */
+.icon-shuffle-1:before {
+  content: '\e8a7';
+}
+
+/* '¯óº' */
+/* line 221, ../assets/sass/_fontello.scss */
+.icon-play-circled:before {
+  content: '\e8a8';
+}
+
+/* '¯ó¿' */
+/* line 222, ../assets/sass/_fontello.scss */
+.icon-play-circled2:before {
+  content: '\e8a9';
+}
+
+/* '¯ó®' */
+/* line 223, ../assets/sass/_fontello.scss */
+.icon-laptop:before {
+  content: '\e8aa';
+}
+
+/* '¯ó¬' */
+/* line 224, ../assets/sass/_fontello.scss */
+.icon-desktop-circled:before {
+  content: '\e8ab';
+}
+
+/* '¯ó½' */
+/* line 225, ../assets/sass/_fontello.scss */
+.icon-desktop-1:before {
+  content: '\e8ac';
+}
+
+/* '¯ó¼' */
+/* line 226, ../assets/sass/_fontello.scss */
+.icon-signal-1:before {
+  content: '\e8ad';
+}
+
+/* '¯ó¡' */
+/* line 227, ../assets/sass/_fontello.scss */
+.icon-key-1:before {
+  content: '\e8ae';
+}
+
+/* '¯ó«' */
+/* line 228, ../assets/sass/_fontello.scss */
+.icon-flight-1:before {
+  content: '\e8af';
+}
+
+/* '¯ó»' */
+/* line 229, ../assets/sass/_fontello.scss */
+.icon-filter:before {
+  content: '\e8b0';
+}
+
+/* '¯ó░' */
+/* line 230, ../assets/sass/_fontello.scss */
+.icon-credit-card:before {
+  content: '\e8b1';
+}
+
+/* '¯ó▒' */
+/* line 231, ../assets/sass/_fontello.scss */
+.icon-clipboard:before {
+  content: '\e8b2';
+}
+
+/* '¯ó▓' */
+/* line 232, ../assets/sass/_fontello.scss */
+.icon-heart-empty-1:before {
+  content: '\e8b3';
+}
+
+/* '¯ó│' */
+/* line 233, ../assets/sass/_fontello.scss */
+.icon-star-2:before {
+  content: '\e8b4';
+}
+
+/* '¯ó┤' */
+/* line 234, ../assets/sass/_fontello.scss */
+.icon-star-circled:before {
+  content: '\e8b5';
+}
+
+/* '¯óÁ' */
+/* line 235, ../assets/sass/_fontello.scss */
+.icon-star-empty-1:before {
+  content: '\e8b6';
+}
+
+/* '¯óÂ' */
+/* line 236, ../assets/sass/_fontello.scss */
+.icon-heart-circled:before {
+  content: '\e8b7';
+}
+
+/* '¯óÀ' */
+/* line 237, ../assets/sass/_fontello.scss */
+.icon-heart-2:before {
+  content: '\e8b8';
+}
+
+/* '¯ó©' */
+/* line 238, ../assets/sass/_fontello.scss */
+.icon-mail-circled:before {
+  content: '\e8b9';
+}
+
+/* '¯ó╣' */
+/* line 239, ../assets/sass/_fontello.scss */
+.icon-mail-2:before {
+  content: '\e8ba';
+}
+
+/* '¯ó║' */
+/* line 240, ../assets/sass/_fontello.scss */
+.icon-th-large-1:before {
+  content: '\e8bb';
+}
+
+/* '¯ó╗' */
+/* line 241, ../assets/sass/_fontello.scss */
+.icon-th-1:before {
+  content: '\e8bc';
+}
+
+/* '¯ó╝' */
+/* line 242, ../assets/sass/_fontello.scss */
+.icon-th-list-1:before {
+  content: '\e8bd';
+}
+
+/* '¯ó¢' */
+/* line 243, ../assets/sass/_fontello.scss */
+.icon-ok-circled:before {
+  content: '\e8be';
+}
+
+/* '¯ó¥' */
+/* line 244, ../assets/sass/_fontello.scss */
+.icon-ok-circled2:before {
+  content: '\e8bf';
+}
+
+/* '¯ó┐' */
+/* line 245, ../assets/sass/_fontello.scss */
+.icon-ok:before {
+  content: '\e8c0';
+}
+
+/* '¯úÇ' */
+/* line 246, ../assets/sass/_fontello.scss */
+.icon-pencil-2:before {
+  content: '\e8c1';
+}
+
+/* '¯úü' */
+/* line 247, ../assets/sass/_fontello.scss */
+.icon-pencil-circled:before {
+  content: '\e8c2';
+}
+
+/* '¯úé' */
+/* line 248, ../assets/sass/_fontello.scss */
+.icon-eye-2:before {
+  content: '\e8c3';
+}
+
+/* '¯úâ' */
+/* line 249, ../assets/sass/_fontello.scss */
+.icon-eye-off:before {
+  content: '\e8c4';
+}
+
+/* '¯úä' */
+/* line 250, ../assets/sass/_fontello.scss */
+.icon-warning:before {
+  content: '\e8c5';
+}
+
+/* '¯úà' */
+/* line 251, ../assets/sass/_fontello.scss */
+.icon-bell-1:before {
+  content: '\e8c6';
+}
+
+/* '¯úå' */
+/* line 252, ../assets/sass/_fontello.scss */
+.icon-phone-circled:before {
+  content: '\e8c7';
+}
+
+/* '¯úç' */
+/* line 253, ../assets/sass/_fontello.scss */
+.icon-phone-1:before {
+  content: '\e8c8';
+}
+
+/* '¯úê' */
+/* line 254, ../assets/sass/_fontello.scss */
+.icon-folder-open:before {
+  content: '\e8c9';
+}
+
+/* '¯úë' */
+/* line 255, ../assets/sass/_fontello.scss */
+.icon-folder-close:before {
+  content: '\e8ca';
+}
+
+/* '¯úè' */
+/* line 256, ../assets/sass/_fontello.scss */
+.icon-folder:before {
+  content: '\e8cb';
+}
+
+/* '¯úï' */
+/* line 257, ../assets/sass/_fontello.scss */
+.icon-folder-circled:before {
+  content: '\e8cc';
+}
+
+/* '¯úî' */
+/* line 258, ../assets/sass/_fontello.scss */
+.icon-doc-new:before {
+  content: '\e8cd';
+}
+
+/* '¯úì' */
+/* line 259, ../assets/sass/_fontello.scss */
+.icon-doc-new-circled:before {
+  content: '\e8ce';
+}
+
+/* '¯úÄ' */
+/* line 260, ../assets/sass/_fontello.scss */
+.icon-doc-circled:before {
+  content: '\e8cf';
+}
+
+/* '¯úÅ' */
+/* line 261, ../assets/sass/_fontello.scss */
+.icon-doc-2:before {
+  content: '\e8d0';
+}
+
+/* '¯úÉ' */
+/* line 262, ../assets/sass/_fontello.scss */
+.icon-trash-circled:before {
+  content: '\e8d1';
+}
+
+/* '¯úæ' */
+/* line 263, ../assets/sass/_fontello.scss */
+.icon-trash-2:before {
+  content: '\e8d2';
+}
+
+/* '¯úÆ' */
+/* line 264, ../assets/sass/_fontello.scss */
+.icon-location-circled:before {
+  content: '\e8d3';
+}
+
+/* '¯úô' */
+/* line 265, ../assets/sass/_fontello.scss */
+.icon-location-2:before {
+  content: '\e8d4';
+}
+
+/* '¯úö' */
+/* line 266, ../assets/sass/_fontello.scss */
+.icon-attach-3:before {
+  content: '\e8d5';
+}
+
+/* '¯úò' */
+/* line 267, ../assets/sass/_fontello.scss */
+.icon-attach-circled:before {
+  content: '\e8d6';
+}
+
+/* '¯úû' */
+/* line 268, ../assets/sass/_fontello.scss */
+.icon-lock-open-alt:before {
+  content: '\e8d7';
+}
+
+/* '¯úù' */
+/* line 269, ../assets/sass/_fontello.scss */
+.icon-lock-open-1:before {
+  content: '\e8d8';
+}
+
+/* '¯úÿ' */
+/* line 270, ../assets/sass/_fontello.scss */
+.icon-lock-circled:before {
+  content: '\e8d9';
+}
+
+/* '¯úÖ' */
+/* line 271, ../assets/sass/_fontello.scss */
+.icon-lock-2:before {
+  content: '\e8da';
+}
+
+/* '¯úÜ' */
+/* line 272, ../assets/sass/_fontello.scss */
+.icon-camera-2:before {
+  content: '\e8db';
+}
+
+/* '¯úø' */
+/* line 273, ../assets/sass/_fontello.scss */
+.icon-facebook:before {
+  content: '\e8dc';
+}
+
+/* '¯ú£' */
+/* line 274, ../assets/sass/_fontello.scss */
+.icon-facebook-rect:before {
+  content: '\e8dd';
+}
+
+/* '¯úØ' */
+/* line 275, ../assets/sass/_fontello.scss */
+.icon-twitter:before {
+  content: '\e8de';
+}
+
+/* '¯ú×' */
+/* line 276, ../assets/sass/_fontello.scss */
+.icon-twitter-bird:before {
+  content: '\e8df';
+}
+
+/* '¯úƒ' */
+/* line 277, ../assets/sass/_fontello.scss */
+.icon-vimeo:before {
+  content: '\e8e0';
+}
+
+/* '¯úá' */
+/* line 278, ../assets/sass/_fontello.scss */
+.icon-vimeo-rect:before {
+  content: '\e8e1';
+}
+
+/* '¯úí' */
+/* line 279, ../assets/sass/_fontello.scss */
+.icon-tumblr:before {
+  content: '\e8e2';
+}
+
+/* '¯úó' */
+/* line 280, ../assets/sass/_fontello.scss */
+.icon-tumblr-rect:before {
+  content: '\e8e3';
+}
+
+/* '¯úú' */
+/* line 281, ../assets/sass/_fontello.scss */
+.icon-googleplus-rect:before {
+  content: '\e8e4';
+}
+
+/* '¯úñ' */
+/* line 282, ../assets/sass/_fontello.scss */
+.icon-github-text:before {
+  content: '\e8e5';
+}
+
+/* '¯úÑ' */
+/* line 283, ../assets/sass/_fontello.scss */
+.icon-github:before {
+  content: '\e8e6';
+}
+
+/* '¯úª' */
+/* line 284, ../assets/sass/_fontello.scss */
+.icon-skype:before {
+  content: '\e8e7';
+}
+
+/* '¯úº' */
+/* line 285, ../assets/sass/_fontello.scss */
+.icon-icq:before {
+  content: '\e8e8';
+}
+
+/* '¯ú¿' */
+/* line 286, ../assets/sass/_fontello.scss */
+.icon-yandex:before {
+  content: '\e8e9';
+}
+
+/* '¯ú®' */
+/* line 287, ../assets/sass/_fontello.scss */
+.icon-yandex-rect:before {
+  content: '\e8ea';
+}
+
+/* '¯ú¬' */
+/* line 288, ../assets/sass/_fontello.scss */
+.icon-vkontakte-rect:before {
+  content: '\e8eb';
+}
+
+/* '¯ú½' */
+/* line 289, ../assets/sass/_fontello.scss */
+.icon-odnoklassniki:before {
+  content: '\e8ec';
+}
+
+/* '¯ú¼' */
+/* line 290, ../assets/sass/_fontello.scss */
+.icon-odnoklassniki-rect:before {
+  content: '\e8ed';
+}
+
+/* '¯ú¡' */
+/* line 291, ../assets/sass/_fontello.scss */
+.icon-friendfeed:before {
+  content: '\e8ee';
+}
+
+/* '¯ú«' */
+/* line 292, ../assets/sass/_fontello.scss */
+.icon-friendfeed-rect:before {
+  content: '\e8ef';
+}
+
+/* '¯ú»' */
+/* line 293, ../assets/sass/_fontello.scss */
+.icon-discover:before {
+  content: '\e8f0';
+}
+
+/* '¯ú░' */
+/* line 294, ../assets/sass/_fontello.scss */
+.icon-amex:before {
+  content: '\e8f1';
+}
+
+/* '¯ú▒' */
+/* line 295, ../assets/sass/_fontello.scss */
+.icon-win8:before {
+  content: '\e8f2';
+}
+
+/* '¯ú▓' */
+/* line 296, ../assets/sass/_fontello.scss */
+.icon-youku:before {
+  content: '\e8f3';
+}
+
+/* '¯ú│' */
+/* line 297, ../assets/sass/_fontello.scss */
+.icon-tudou:before {
+  content: '\e8f4';
+}
+
+/* '¯ú┤' */
+/* line 298, ../assets/sass/_fontello.scss */
+.icon-box-rect:before {
+  content: '\e8f5';
+}
+
+/* '¯úÁ' */
+/* line 299, ../assets/sass/_fontello.scss */
+.icon-box:before {
+  content: '\e8f6';
+}
+
+/* '¯úÂ' */
+/* line 300, ../assets/sass/_fontello.scss */
+.icon-diigo:before {
+  content: '\e8f7';
+}
+
+/* '¯úÀ' */
+/* line 301, ../assets/sass/_fontello.scss */
+.icon-instagram-filled:before {
+  content: '\e8f8';
+}
+
+/* '¯ú©' */
+/* line 302, ../assets/sass/_fontello.scss */
+.icon-wordpress:before {
+  content: '\e8f9';
+}
+
+/* '¯ú╣' */
+/* line 303, ../assets/sass/_fontello.scss */
+.icon-picasa:before {
+  content: '\e8fa';
+}
+
+/* '¯ú║' */
+/* line 304, ../assets/sass/_fontello.scss */
+.icon-linkedin-rect:before {
+  content: '\e8fb';
+}
+
+/* '¯ú╗' */
+/* line 305, ../assets/sass/_fontello.scss */
+.icon-linkedin:before {
+  content: '\e8fc';
+}
+
+/* '¯ú╝' */
+/* line 306, ../assets/sass/_fontello.scss */
+.icon-lastfm-rect:before {
+  content: '\e8fd';
+}
+
+/* '¯ú¢' */
+/* line 307, ../assets/sass/_fontello.scss */
+.icon-lastfm:before {
+  content: '\e8fe';
+}
+
+/* '¯ú¥' */
+/* line 308, ../assets/sass/_fontello.scss */
+.icon-jabber:before {
+  content: '\e8ff';
+}
+
+/* '¯ú┐' */
+/* line 309, ../assets/sass/_fontello.scss */
+.icon-deviantart:before {
+  content: '\e900';
+}
+
+/* '¯ñÇ' */
+/* line 310, ../assets/sass/_fontello.scss */
+.icon-blogger-rect:before {
+  content: '\e901';
+}
+
+/* '¯ñü' */
+/* line 311, ../assets/sass/_fontello.scss */
+.icon-blogger:before {
+  content: '\e902';
+}
+
+/* '¯ñé' */
+/* line 312, ../assets/sass/_fontello.scss */
+.icon-visa:before {
+  content: '\e903';
+}
+
+/* '¯ñâ' */
+/* line 313, ../assets/sass/_fontello.scss */
+.icon-mastercard:before {
+  content: '\e904';
+}
+
+/* '¯ñä' */
+/* line 314, ../assets/sass/_fontello.scss */
+.icon-houzz:before {
+  content: '\e905';
+}
+
+/* '¯ñà' */
+/* line 315, ../assets/sass/_fontello.scss */
+.icon-bandcamp:before {
+  content: '\e906';
+}
+
+/* '¯ñå' */
+/* line 316, ../assets/sass/_fontello.scss */
+.icon-codepen:before {
+  content: '\e907';
+}
+
+/* '¯ñç' */
+/* line 317, ../assets/sass/_fontello.scss */
+.icon-bicycle:before {
+  content: '\e908';
+}
+
+/* '¯ñê' */
+/* line 318, ../assets/sass/_fontello.scss */
+.icon-bus:before {
+  content: '\e909';
+}
+
+/* '¯ñë' */
+/* line 319, ../assets/sass/_fontello.scss */
+.icon-cafe:before {
+  content: '\e90a';
+}
+
+/* '¯ñè' */
+/* line 320, ../assets/sass/_fontello.scss */
+.icon-college:before {
+  content: '\e90b';
+}
+
+/* '¯ñï' */
+/* line 321, ../assets/sass/_fontello.scss */
+.icon-cinema:before {
+  content: '\e90c';
+}
+
+/* '¯ñî' */
+/* line 322, ../assets/sass/_fontello.scss */
+.icon-library:before {
+  content: '\e90d';
+}
+
+/* '¯ñì' */
+/* line 323, ../assets/sass/_fontello.scss */
+.icon-lodging:before {
+  content: '\e90e';
+}
+
+/* '¯ñÄ' */
+/* line 324, ../assets/sass/_fontello.scss */
+.icon-minefield:before {
+  content: '\e90f';
+}
+
+/* '¯ñÅ' */
+/* line 325, ../assets/sass/_fontello.scss */
+.icon-london-underground:before {
+  content: '\e910';
+}
+
+/* '¯ñÉ' */
+/* line 326, ../assets/sass/_fontello.scss */
+.icon-theatre:before {
+  content: '\e911';
+}
+
+/* '¯ñæ' */
+/* line 327, ../assets/sass/_fontello.scss */
+.icon-tennis:before {
+  content: '\e912';
+}
+
+/* '¯ñÆ' */
+/* line 328, ../assets/sass/_fontello.scss */
+.icon-swimming:before {
+  content: '\e913';
+}
+
+/* '¯ñô' */
+/* line 329, ../assets/sass/_fontello.scss */
+.icon-soccer:before {
+  content: '\e914';
+}
+
+/* '¯ñö' */
+/* line 330, ../assets/sass/_fontello.scss */
+.icon-skiing:before {
+  content: '\e915';
+}
+
+/* '¯ñò' */
+/* line 331, ../assets/sass/_fontello.scss */
+.icon-shop-1:before {
+  content: '\e916';
+}
+
+/* '¯ñû' */
+/* line 332, ../assets/sass/_fontello.scss */
+.icon-school:before {
+  content: '\e917';
+}
+
+/* '¯ñù' */
+/* line 333, ../assets/sass/_fontello.scss */
+.icon-religious-islam:before {
+  content: '\e918';
+}
+
+/* '¯ñÿ' */
+/* line 334, ../assets/sass/_fontello.scss */
+.icon-religious-jewish:before {
+  content: '\e919';
+}
+
+/* '¯ñÖ' */
+/* line 335, ../assets/sass/_fontello.scss */
+.icon-religious-christian:before {
+  content: '\e91a';
+}
+
+/* '¯ñÜ' */
+/* line 336, ../assets/sass/_fontello.scss */
+.icon-rail:before {
+  content: '\e91b';
+}
+
+/* '¯ñø' */
+/* line 337, ../assets/sass/_fontello.scss */
+.icon-prison:before {
+  content: '\e91c';
+}
+
+/* '¯ñ£' */
+/* line 338, ../assets/sass/_fontello.scss */
+.icon-post:before {
+  content: '\e91d';
+}
+
+/* '¯ñØ' */
+/* line 339, ../assets/sass/_fontello.scss */
+.icon-pitch:before {
+  content: '\e91e';
+}
+
+/* '¯ñ×' */
+/* line 340, ../assets/sass/_fontello.scss */
+.icon-police:before {
+  content: '\e91f';
+}
+
+/* '¯ñƒ' */
+/* line 341, ../assets/sass/_fontello.scss */
+.icon-tree-1:before {
+  content: '\e920';
+}
+
+/* '¯ñá' */
+/* line 342, ../assets/sass/_fontello.scss */
+.icon-tree-2:before {
+  content: '\e921';
+}
+
+/* '¯ñí' */
+/* line 343, ../assets/sass/_fontello.scss */
+.icon-warehouse:before {
+  content: '\e922';
+}
+
+/* '¯ñó' */
+/* line 344, ../assets/sass/_fontello.scss */
+.icon-fast-food:before {
+  content: '\e923';
+}
+
+/* '¯ñú' */
+/* line 345, ../assets/sass/_fontello.scss */
+.icon-ferry:before {
+  content: '\e924';
+}
+
+/* '¯ññ' */
+/* line 346, ../assets/sass/_fontello.scss */
+.icon-fire-station:before {
+  content: '\e925';
+}
+
+/* '¯ñÑ' */
+/* line 347, ../assets/sass/_fontello.scss */
+.icon-football:before {
+  content: '\e926';
+}
+
+/* '¯ñª' */
+/* line 348, ../assets/sass/_fontello.scss */
+.icon-fuel:before {
+  content: '\e927';
+}
+
+/* '¯ñº' */
+/* line 349, ../assets/sass/_fontello.scss */
+.icon-garden:before {
+  content: '\e928';
+}
+
+/* '¯ñ¿' */
+/* line 350, ../assets/sass/_fontello.scss */
+.icon-giraffe:before {
+  content: '\e929';
+}
+
+/* '¯ñ®' */
+/* line 351, ../assets/sass/_fontello.scss */
+.icon-golf:before {
+  content: '\e92a';
+}
+
+/* '¯ñ¬' */
+/* line 352, ../assets/sass/_fontello.scss */
+.icon-grocery-store:before {
+  content: '\e92b';
+}
+
+/* '¯ñ½' */
+/* line 353, ../assets/sass/_fontello.scss */
+.icon-harbor:before {
+  content: '\e92c';
+}
+
+/* '¯ñ¼' */
+/* line 354, ../assets/sass/_fontello.scss */
+.icon-belowground-rail:before {
+  content: '\e92d';
+}
+
+/* '¯ñ¡' */
+/* line 355, ../assets/sass/_fontello.scss */
+.icon-beer:before {
+  content: '\e92e';
+}
+
+/* '¯ñ«' */
+/* line 356, ../assets/sass/_fontello.scss */
+.icon-basketball:before {
+  content: '\e92f';
+}
+
+/* '¯ñ»' */
+/* line 357, ../assets/sass/_fontello.scss */
+.icon-baseball:before {
+  content: '\e930';
+}
+
+/* '¯ñ░' */
+/* line 358, ../assets/sass/_fontello.scss */
+.icon-bar2:before {
+  content: '\e931';
+}
+
+/* '¯ñ▒' */
+/* line 359, ../assets/sass/_fontello.scss */
+.icon-art-gallery:before {
+  content: '\e932';
+}
+
+/* '¯ñ▓' */
+/* line 360, ../assets/sass/_fontello.scss */
+.icon-airport:before {
+  content: '\e933';
+}
+
+/* '¯ñ│' */
+/* line 361, ../assets/sass/_fontello.scss */
+.icon-airfield:before {
+  content: '\e934';
+}
+
+/* '¯ñ┤' */
+/* line 362, ../assets/sass/_fontello.scss */
+.icon-aboveground-rail:before {
+  content: '\e935';
+}
+
+/* '¯ñÁ' */
+/* line 363, ../assets/sass/_fontello.scss */
+.icon-cemetery:before {
+  content: '\e936';
+}
+
+/* '¯ñÂ' */
+/* line 364, ../assets/sass/_fontello.scss */
+.icon-commerical-building:before {
+  content: '\e937';
+}
+
+/* '¯ñÀ' */
+/* line 365, ../assets/sass/_fontello.scss */
+.icon-credit-card-1:before {
+  content: '\e938';
+}
+
+/* '¯ñ©' */
+/* line 366, ../assets/sass/_fontello.scss */
+.icon-cricket:before {
+  content: '\e939';
+}
+
+/* '¯ñ╣' */
+/* line 367, ../assets/sass/_fontello.scss */
+.icon-embassy:before {
+  content: '\e93a';
+}
+
+/* '¯ñ║' */
+/* line 368, ../assets/sass/_fontello.scss */
+.icon-pharmacy:before {
+  content: '\e93b';
+}
+
+/* '¯ñ╗' */
+/* line 369, ../assets/sass/_fontello.scss */
+.icon-museum:before {
+  content: '\e93c';
+}
+
+/* '¯ñ╝' */
+/* line 370, ../assets/sass/_fontello.scss */
+.icon-monument:before {
+  content: '\e93d';
+}
+
+/* '¯ñ¢' */
+/* line 371, ../assets/sass/_fontello.scss */
+.icon-toilet:before {
+  content: '\e93e';
+}
+
+/* '¯ñ¥' */
+/* line 372, ../assets/sass/_fontello.scss */
+.icon-town-hall:before {
+  content: '\e93f';
+}
+
+/* '¯ñ┐' */
+/* line 373, ../assets/sass/_fontello.scss */
+.icon-trash-3:before {
+  content: '\e940';
+}
+
+/* '¯ÑÇ' */
+/* line 374, ../assets/sass/_fontello.scss */
+.icon-heliport:before {
+  content: '\e941';
+}
+
+/* '¯Ñü' */
+/* line 375, ../assets/sass/_fontello.scss */
+.icon-hospital:before {
+  content: '\e942';
+}
+
+/* '¯Ñé' */
+/* line 376, ../assets/sass/_fontello.scss */
+.icon-industrial-building:before {
+  content: '\e943';
+}
+
+/* '¯Ñâ' */
+/* line 377, ../assets/sass/_fontello.scss */
+.icon-restaurant:before {
+  content: '\e944';
+}
+
+/* '¯Ñä' */
+/* line 378, ../assets/sass/_fontello.scss */
+.icon-menu-1:before {
+  content: '\e945';
+}
+
+/* '¯Ñà' */
+/* line 379, ../assets/sass/_fontello.scss */
+.icon-th-thumb:before {
+  content: '\e946';
+}
+
+/* '¯Ñå' */
+/* line 380, ../assets/sass/_fontello.scss */
+.icon-th-list-2:before {
+  content: '\e947';
+}
+
+/* '¯Ñç' */
+/* line 381, ../assets/sass/_fontello.scss */
+.icon-th-thumb-empty:before {
+  content: '\e948';
+}
+
+/* '¯Ñê' */
+/* line 382, ../assets/sass/_fontello.scss */
+.icon-ok-1:before {
+  content: '\e949';
+}
+
+/* '¯Ñë' */
+/* line 383, ../assets/sass/_fontello.scss */
+.icon-ok-circled-1:before {
+  content: '\e94a';
+}
+
+/* '¯Ñè' */
+/* line 384, ../assets/sass/_fontello.scss */
+.icon-cancel-1:before {
+  content: '\e94b';
+}
+
+/* '¯Ñï' */
+/* line 385, ../assets/sass/_fontello.scss */
+.icon-cancel-circled:before {
+  content: '\e94c';
+}
+
+/* '¯Ñî' */
+/* line 386, ../assets/sass/_fontello.scss */
+.icon-plus:before {
+  content: '\e94d';
+}
+
+/* '¯Ñì' */
+/* line 387, ../assets/sass/_fontello.scss */
+.icon-help-circled-1:before {
+  content: '\e94e';
+}
+
+/* '¯ÑÄ' */
+/* line 388, ../assets/sass/_fontello.scss */
+.icon-help-circled-alt:before {
+  content: '\e94f';
+}
+
+/* '¯ÑÅ' */
+/* line 389, ../assets/sass/_fontello.scss */
+.icon-user-2:before {
+  content: '\e950';
+}
+
+/* '¯ÑÉ' */
+/* line 390, ../assets/sass/_fontello.scss */
+.icon-user-male:before {
+  content: '\e951';
+}
+
+/* '¯Ñæ' */
+/* line 391, ../assets/sass/_fontello.scss */
+.icon-user-female:before {
+  content: '\e952';
+}
+
+/* '¯ÑÆ' */
+/* line 392, ../assets/sass/_fontello.scss */
+.icon-users-1:before {
+  content: '\e953';
+}
+
+/* '¯Ñô' */
+/* line 393, ../assets/sass/_fontello.scss */
+.icon-camera-3:before {
+  content: '\e954';
+}
+
+/* '¯Ñö' */
+/* line 394, ../assets/sass/_fontello.scss */
+.icon-eye-3:before {
+  content: '\e955';
+}
+
+/* '¯Ñò' */
+/* line 395, ../assets/sass/_fontello.scss */
+.icon-lock-3:before {
+  content: '\e956';
+}
+
+/* '¯Ñû' */
+/* line 396, ../assets/sass/_fontello.scss */
+.icon-lock-alt:before {
+  content: '\e957';
+}
+
+/* '¯Ñù' */
+/* line 397, ../assets/sass/_fontello.scss */
+.icon-lock-open-2:before {
+  content: '\e958';
+}
+
+/* '¯Ñÿ' */
+/* line 398, ../assets/sass/_fontello.scss */
+.icon-lock-open-alt-1:before {
+  content: '\e959';
+}
+
+/* '¯ÑÖ' */
+/* line 399, ../assets/sass/_fontello.scss */
+.icon-attach-4:before {
+  content: '\e95a';
+}
+
+/* '¯ÑÜ' */
+/* line 400, ../assets/sass/_fontello.scss */
+.icon-link-1:before {
+  content: '\e95b';
+}
+
+/* '¯Ñø' */
+/* line 401, ../assets/sass/_fontello.scss */
+.icon-info-circled-alt:before {
+  content: '\e95c';
+}
+
+/* '¯Ñ£' */
+/* line 402, ../assets/sass/_fontello.scss */
+.icon-clock-2:before {
+  content: '\e95d';
+}
+
+/* '¯ÑØ' */
+/* line 403, ../assets/sass/_fontello.scss */
+.icon-stopwatch:before {
+  content: '\e95e';
+}
+
+/* '¯Ñ×' */
+/* line 404, ../assets/sass/_fontello.scss */
+.icon-hourglass:before {
+  content: '\e95f';
+}
+
+/* '¯Ñƒ' */
+/* line 405, ../assets/sass/_fontello.scss */
+.icon-paper-plane-alt:before {
+  content: '\e960';
+}
+
+/* '¯Ñá' */
+/* line 406, ../assets/sass/_fontello.scss */
+.icon-paper-plane-alt2:before {
+  content: '\e961';
+}
+
+/* '¯Ñí' */
+/* line 407, ../assets/sass/_fontello.scss */
+.icon-location-3:before {
+  content: '\e962';
+}
+
+/* '¯Ñó' */
+/* line 408, ../assets/sass/_fontello.scss */
+.icon-trash-4:before {
+  content: '\e963';
+}
+
+/* '¯Ñú' */
+/* line 409, ../assets/sass/_fontello.scss */
+.icon-doc-3:before {
+  content: '\e964';
+}
+
+/* '¯Ññ' */
+/* line 410, ../assets/sass/_fontello.scss */
+.icon-newspaper-1:before {
+  content: '\e965';
+}
+
+/* '¯ÑÑ' */
+/* line 411, ../assets/sass/_fontello.scss */
+.icon-folder-open-1:before {
+  content: '\e966';
+}
+
+/* '¯Ñª' */
+/* line 412, ../assets/sass/_fontello.scss */
+.icon-folder-empty:before {
+  content: '\e967';
+}
+
+/* '¯Ñº' */
+/* line 413, ../assets/sass/_fontello.scss */
+.icon-folder-open-empty:before {
+  content: '\e968';
+}
+
+/* '¯Ñ¿' */
+/* line 414, ../assets/sass/_fontello.scss */
+.icon-folder-1:before {
+  content: '\e969';
+}
+
+/* '¯Ñ®' */
+/* line 415, ../assets/sass/_fontello.scss */
+.icon-attention-alt:before {
+  content: '\e96a';
+}
+
+/* '¯Ñ¬' */
+/* line 416, ../assets/sass/_fontello.scss */
+.icon-attention-1:before {
+  content: '\e96b';
+}
+
+/* '¯Ñ½' */
+/* line 417, ../assets/sass/_fontello.scss */
+.icon-bell-2:before {
+  content: '\e96c';
+}
+
+/* '¯Ñ¼' */
+/* line 418, ../assets/sass/_fontello.scss */
+.icon-chat-1:before {
+  content: '\e96d';
+}
+
+/* '¯Ñ¡' */
+/* line 419, ../assets/sass/_fontello.scss */
+.icon-comment-1:before {
+  content: '\e96e';
+}
+
+/* '¯Ñ«' */
+/* line 420, ../assets/sass/_fontello.scss */
+.icon-print:before {
+  content: '\e96f';
+}
+
+/* '¯Ñ»' */
+/* line 421, ../assets/sass/_fontello.scss */
+.icon-export-1:before {
+  content: '\e970';
+}
+
+/* '¯Ñ░' */
+/* line 422, ../assets/sass/_fontello.scss */
+.icon-reply:before {
+  content: '\e971';
+}
+
+/* '¯Ñ▒' */
+/* line 423, ../assets/sass/_fontello.scss */
+.icon-pencil-3:before {
+  content: '\e972';
+}
+
+/* '¯Ñ▓' */
+/* line 424, ../assets/sass/_fontello.scss */
+.icon-calendar-2:before {
+  content: '\e973';
+}
+
+/* '¯Ñ│' */
+/* line 425, ../assets/sass/_fontello.scss */
+.icon-globe-2:before {
+  content: '\e974';
+}
+
+/* '¯Ñ┤' */
+/* line 426, ../assets/sass/_fontello.scss */
+.icon-globe-inv:before {
+  content: '\e975';
+}
+
+/* '¯ÑÁ' */
+/* line 427, ../assets/sass/_fontello.scss */
+.icon-at:before {
+  content: '\e976';
+}
+
+/* '¯ÑÂ' */
+/* line 428, ../assets/sass/_fontello.scss */
+.icon-play-circled-1:before {
+  content: '\e977';
+}
+
+/* '¯ÑÀ' */
+/* line 429, ../assets/sass/_fontello.scss */
+.icon-play-circled2-1:before {
+  content: '\e978';
+}
+
+/* '¯Ñ©' */
+/* line 430, ../assets/sass/_fontello.scss */
+.icon-pause:before {
+  content: '\e979';
+}
+
+/* '¯Ñ╣' */
+/* line 431, ../assets/sass/_fontello.scss */
+.icon-stop:before {
+  content: '\e97a';
+}
+
+/* '¯Ñ║' */
+/* line 432, ../assets/sass/_fontello.scss */
+.icon-trash-5:before {
+  content: '\e97b';
+}
+
+/* '¯Ñ╗' */
+/* line 433, ../assets/sass/_fontello.scss */
+.icon-doc-4:before {
+  content: '\e97c';
+}
+
+/* '¯Ñ╝' */
+/* line 434, ../assets/sass/_fontello.scss */
+.icon-docs-1:before {
+  content: '\e97d';
+}
+
+/* '¯Ñ¢' */
+/* line 435, ../assets/sass/_fontello.scss */
+.icon-doc-text-1:before {
+  content: '\e97e';
+}
+
+/* '¯Ñ¥' */
+/* line 436, ../assets/sass/_fontello.scss */
+.icon-user-md:before {
+  content: '\e97f';
+}
+
+/* '¯Ñ┐' */
+/* line 437, ../assets/sass/_fontello.scss */
+.icon-stethoscope:before {
+  content: '\e980';
+}
+
+/* '¯ªÇ' */
+/* line 438, ../assets/sass/_fontello.scss */
+.icon-ambulance:before {
+  content: '\e981';
+}
+
+/* '¯ªü' */
+/* line 439, ../assets/sass/_fontello.scss */
+.icon-building-filled:before {
+  content: '\e982';
+}
+
+/* '¯ªé' */
+/* line 440, ../assets/sass/_fontello.scss */
+.icon-bank:before {
+  content: '\e983';
+}
+
+/* '¯ªâ' */
+/* line 441, ../assets/sass/_fontello.scss */
+.icon-medkit:before {
+  content: '\e984';
+}
+
+/* '¯ªä' */
+/* line 442, ../assets/sass/_fontello.scss */
+.icon-coffee:before {
+  content: '\e985';
+}
+
+/* '¯ªà' */
+/* line 443, ../assets/sass/_fontello.scss */
+.icon-taxi:before {
+  content: '\e986';
+}
+
+/* '¯ªå' */
+/* line 444, ../assets/sass/_fontello.scss */
+.icon-truck-1:before {
+  content: '\e987';
+}
+
+/* '¯ªç' */
+/* line 445, ../assets/sass/_fontello.scss */
+.icon-food-1:before {
+  content: '\e988';
+}
+
+/* '¯ªê' */
+/* line 446, ../assets/sass/_fontello.scss */
+.icon-user-pair:before {
+  content: '\e989';
+}
+
+/* '¯ªë' */
+/* line 447, ../assets/sass/_fontello.scss */
+.icon-user-woman:before {
+  content: '\e98a';
+}
+
+/* '¯ªè' */
+/* line 448, ../assets/sass/_fontello.scss */
+.icon-home-1:before {
+  content: '\e98b';
+}
+
+/* '¯ªï' */
+/* line 449, ../assets/sass/_fontello.scss */
+.icon-basket-1:before {
+  content: '\e98c';
+}
+
+/* '¯ªî' */
+/* line 450, ../assets/sass/_fontello.scss */
+.icon-website:before {
+  content: '\e98d';
+}
+
+/* '¯ªì' */
+/* line 451, ../assets/sass/_fontello.scss */
+.icon-group:before {
+  content: '\e98e';
+}
+
+/* '¯ªÄ' */
+/* line 452, ../assets/sass/_fontello.scss */
+.icon-user-3:before {
+  content: '\e98f';
+}
+
+/* '¯ªÅ' */
+/* line 453, ../assets/sass/_fontello.scss */
+.icon-person:before {
+  content: '\e990';
+}
+
+/* '¯ªÉ' */
+/* line 454, ../assets/sass/_fontello.scss */
+.icon-group-circled:before {
+  content: '\e991';
+}
+
+/* '¯ªæ' */
+/* line 455, ../assets/sass/_fontello.scss */
+.icon-female:before {
+  content: '\e992';
+}
+
+/* '¯ªÆ' */
+/* line 456, ../assets/sass/_fontello.scss */
+.icon-smiley:before {
+  content: '\e993';
+}
+
+/* '¯ªô' */
+/* line 457, ../assets/sass/_fontello.scss */
+.icon-smiley-circled:before {
+  content: '\e994';
+}
+
+/* '¯ªö' */
+/* line 458, ../assets/sass/_fontello.scss */
+.icon-bug:before {
+  content: '\e995';
+}
+
+/* '¯ªò' */
+/* line 459, ../assets/sass/_fontello.scss */
+.icon-certificate-1:before {
+  content: '\e996';
+}
+
+/* '¯ªû' */
+/* line 460, ../assets/sass/_fontello.scss */
+.icon-graduation-cap-2:before {
+  content: '\e997';
+}
+
+/* '¯ªù' */
+/* line 461, ../assets/sass/_fontello.scss */
+.icon-wheelchair:before {
+  content: '\e998';
+}
+
+/* '¯ªÿ' */
+/* line 462, ../assets/sass/_fontello.scss */
+.icon-extinguisher:before {
+  content: '\e999';
+}
+
+/* '¯ªÖ' */
+/* line 463, ../assets/sass/_fontello.scss */
+.icon-shield:before {
+  content: '\e99a';
+}
+
+/* '¯ªÜ' */
+/* line 464, ../assets/sass/_fontello.scss */
+.icon-hammer:before {
+  content: '\e99b';
+}
+
+/* '¯ªø' */
+/* line 465, ../assets/sass/_fontello.scss */
+.icon-cab:before {
+  content: '\e99c';
+}
+
+/* '¯ª£' */
+/*****************************
+* VARI├üVEIS
+******************************/
+/*****************************
+* FONTES
+******************************/
+/*****************************
+* GERAL ROYAL HOTEL
+******************************/
+/* line 23, ../assets/sass/_default.scss */
+.text-principal {
+  color: #A99269;
+}
+
+/* line 27, ../assets/sass/_default.scss */
+.sobre,
+.acomodacoes,
+.acomodacoes-features,
+.servicos-features {
+  padding: 70px 0;
+}
+
+/* line 34, ../assets/sass/_default.scss */
+body {
+  font-family: Effra, Raleway, Calibri, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #676767;
+}
+
+/* line 41, ../assets/sass/_default.scss */
+h1 {
+  text-transform: uppercase;
+  width: 210px;
+  margin: 0 auto 30px;
+  text-align: center;
+  color: #676767;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+/* line 50, ../assets/sass/_default.scss */
+h1 span.header {
+  border-bottom: 1px solid #A99269;
+  padding: 5px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+/* line 57, ../assets/sass/_default.scss */
+h2 {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #676767;
+  font-weight: bold;
+}
+
+/* line 65, ../assets/sass/_default.scss */
+.coroa-mini {
+  margin-top: 70px;
+}
+
+/* line 69, ../assets/sass/_default.scss */
+.btn-black {
+  margin-top: 10px;
+  display: inline-block;
+  border: 1px solid #A99269;
+  color: #A99269;
+  font-size: 16px;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  background-color: #141414;
+  border-radius: 0;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  position: relative;
+  letter-spacing: 2px;
+}
+@media (max-height: 536px) {
+  /* line 69, ../assets/sass/_default.scss */
+  .btn-black {
+    font-size: 13px;
+  }
+}
+/* line 88, ../assets/sass/_default.scss */
+.btn-black:hover {
+  color: #FFF !important;
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  text-decoration: none;
+}
+/* line 94, ../assets/sass/_default.scss */
+.btn-black:hover:hover:before,
+.btn-black:hover :focus:before,
+.btn-black:hover :active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+/* line 102, ../assets/sass/_default.scss */
+.btn-black:visited, .btn-black:focus {
+  text-decoration: none;
+  color: #A99269;
+}
+/* line 108, ../assets/sass/_default.scss */
+.btn-black:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  /* Para o texto ficar por cima */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #A99269;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+/*****************************
+* HEADER
+******************************/
+/* line 134, ../assets/sass/_default.scss */
+header {
+  height: 650px;
+  background-color: #141414;
+  background: url(../img/reception.jpg) center no-repeat;
+  -webkit-background-size: cover;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  position: relative;
+}
+
+/*header:hover {
+    -webkit-background-size: 102%;
+}*/
+/* line 150, ../assets/sass/_default.scss */
+.center {
+  width: 200px;
+  height: 126px;
+  position: absolute;
+  top: 50%;
+  margin-top: -75px;
+  left: 50%;
+  margin-left: -100px;
+}
+
+/* line 159, ../assets/sass/_default.scss */
+.center img {
+  width: 200px;
+}
+
+/*****************************
+* NAVEGA├ç├âO
+******************************/
+/* line 168, ../assets/sass/_default.scss */
+.mainNav {
+  position: absolute;
+  left: 50%;
+  margin-left: -275px;
+  top: 50px;
+  height: 50px;
+}
+
+/* line 175, ../assets/sass/_default.scss */
+.mainNav li {
+  display: inline-block;
+  margin-right: 16px;
+  text-align: center;
+}
+
+/* line 180, ../assets/sass/_default.scss */
+.mainNav a {
+  font-size: 20px;
+  display: block;
+  color: #FFF;
+  text-decoration: none;
+  padding: 0 10px;
+  text-transform: uppercase;
+  -moz-transition: 1s all;
+  -webkit-transition: 1s all;
+  -o-transition: 1s all;
+  transition: 1s all;
+}
+
+/* line 193, ../assets/sass/_default.scss */
+.mainNav a:hover {
+  color: #333;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* line 198, ../assets/sass/_default.scss */
+.navbar-toggle {
+  border: 1px solid #FFF;
+}
+/* line 201, ../assets/sass/_default.scss */
+.navbar-toggle .icon-bar {
+  background: #FFF;
+}
+
+/* line 206, ../assets/sass/_default.scss */
+.nav > li > a:focus, .nav > li > a:hover {
+  /*background-color: transparent;*/
+}
+
+@media (max-width: 767px) {
+  /* line 211, ../assets/sass/_default.scss */
+  .mainNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: 0px;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  /* line 218, ../assets/sass/_default.scss */
+  .mainNav .navbar-collapse {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  /* line 222, ../assets/sass/_default.scss */
+  .mainNav .navbar-collapse ul.navbar-nav li {
+    display: inline;
+  }
+  /* line 225, ../assets/sass/_default.scss */
+  .mainNav .navbar-collapse ul.navbar-nav li a {
+    text-align: left;
+    background-color: transparent;
+  }
+  /* line 229, ../assets/sass/_default.scss */
+  .mainNav .navbar-collapse ul.navbar-nav li a:hover {
+    color: #A99269;
+  }
+}
+/*****************************
+* SOBRE
+******************************/
+/* line 244, ../assets/sass/_default.scss */
+.sobre {
+  background: #FFF;
+  color: #676767;
+  text-align: justify;
+}
+
+/*****************************
+* ACOMODA├ç├òES
+******************************/
+/* line 254, ../assets/sass/_default.scss */
+.acomodacoes {
+  min-height: 400px;
+  background: url(../img/room-service.jpg);
+  background-color: #D0C5B1;
+  background-attachment: fixed;
+  position: relative;
+}
+@media (max-width: 767px) {
+  /* line 254, ../assets/sass/_default.scss */
+  .acomodacoes {
+    background: url(../img/room-service.jpg) -703px -63px;
+    background-attachment: fixed;
+  }
+}
+/* line 266, ../assets/sass/_default.scss */
+.acomodacoes .quote {
+  font-size: 40px;
+  color: #FFF;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 15% auto;
+  padding: 5px 0;
+  width: 70%;
+}
+@media (max-width: 767px) {
+  /* line 266, ../assets/sass/_default.scss */
+  .acomodacoes .quote {
+    font-size: 20px;
+    margin: 43% auto;
+  }
+}
+
+/* line 283, ../assets/sass/_default.scss */
+.acomodacoes-features {
+  background: #1D1D1D;
+}
+/* line 286, ../assets/sass/_default.scss */
+.acomodacoes-features figure {
+  position: relative;
+  overflow: hidden;
+}
+/* line 290, ../assets/sass/_default.scss */
+.acomodacoes-features figure a.btn-reservar {
+  position: absolute;
+  top: -100px;
+  right: 15px;
+  padding: 6px 12px;
+  border: 1px solid #FFF;
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  z-index: 1;
+  -moz-transition: all .5s;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+@media (max-width: 767px) {
+  /* line 290, ../assets/sass/_default.scss */
+  .acomodacoes-features figure a.btn-reservar {
+    top: 15px;
+  }
+}
+/* line 311, ../assets/sass/_default.scss */
+.acomodacoes-features figure:hover .btn-reservar {
+  top: 15px;
+  -moz-transition: all .5s;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+/* line 319, ../assets/sass/_default.scss */
+.acomodacoes-features figure .box-img {
+  position: relative;
+  overflow: hidden;
+}
+/* line 323, ../assets/sass/_default.scss */
+.acomodacoes-features figure .box-img span.title-room {
+  font-size: 24px;
+  position: absolute;
+  bottom: 15px;
+  color: #FFF;
+  padding: 0 20px;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  -moz-transition: all .4s;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+/* line 339, ../assets/sass/_default.scss */
+.acomodacoes-features figure:hover span.title-room {
+  opacity: 0;
+  bottom: -100px;
+  -moz-transition: all .8s ease-out;
+  -webkit-transition: all .8s ease-out;
+  -o-transition: all .8s ease-out;
+  transition: all .8s ease-out;
+}
+@media (max-width: 767px) {
+  /* line 339, ../assets/sass/_default.scss */
+  .acomodacoes-features figure:hover span.title-room {
+    opacity: 1;
+    bottom: 15px;
+  }
+}
+@media (max-width: 991px) {
+  /* line 286, ../assets/sass/_default.scss */
+  .acomodacoes-features figure {
+    margin-bottom: 15px;
+  }
+}
+/* line 358, ../assets/sass/_default.scss */
+.acomodacoes-features span.description-room {
+  font-size: 16px;
+  text-align: justify;
+  display: block;
+  margin-top: 10px;
+  color: #676767;
+}
+/* line 366, ../assets/sass/_default.scss */
+.acomodacoes-features a.btn-black {
+  margin-bottom: 15px;
+}
+/* line 370, ../assets/sass/_default.scss */
+.acomodacoes-features .view-all {
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 100;
+  color: #676767;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 70px;
+}
+/* line 380, ../assets/sass/_default.scss */
+.acomodacoes-features .view-all:before, .acomodacoes-features .view-all:after {
+  content: " ";
+  display: inline-block;
+  width: 15px;
+  height: 1px;
+  background-color: #676767;
+  vertical-align: middle;
+}
+/* line 390, ../assets/sass/_default.scss */
+.acomodacoes-features .view-all:before {
+  margin-right: 18px;
+}
+/* line 394, ../assets/sass/_default.scss */
+.acomodacoes-features .view-all:after {
+  margin-left: 18px;
+}
+/* line 398, ../assets/sass/_default.scss */
+.acomodacoes-features .view-all:hover {
+  color: #A99269;
+}
+/* line 402, ../assets/sass/_default.scss */
+.acomodacoes-features .view-all:hover:before, .acomodacoes-features .view-all:hover:after {
+  background-color: #A99269;
+}
+
+/*****************************
+* SERVI├çOS
+******************************/
+/* line 413, ../assets/sass/_default.scss */
+.band {
+  background-color: #A99269;
+  height: 100px;
+  line-height: 100px;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 100;
+  text-align: center;
+}
+/* line 422, ../assets/sass/_default.scss */
+.band.second {
+  margin-bottom: 600px;
+}
+@media (max-width: 991px) {
+  /* line 422, ../assets/sass/_default.scss */
+  .band.second {
+    margin-bottom: 0px;
+  }
+}
+/* line 430, ../assets/sass/_default.scss */
+.band p {
+  line-height: normal;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 15px;
+}
+
+/* line 438, ../assets/sass/_default.scss */
+.servicos-features {
+  background-color: #FFF;
+}
+/* line 441, ../assets/sass/_default.scss */
+.servicos-features .feat {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #676767;
+  display: block;
+  opacity: .5;
+  cursor: pointer;
+  margin: auto;
+  margin-bottom: 15px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+@media (max-width: 380px) {
+  /* line 441, ../assets/sass/_default.scss */
+  .servicos-features .feat {
+    width: 120px;
+    height: 120px;
+  }
+}
+/* line 459, ../assets/sass/_default.scss */
+.servicos-features .feat:hover, .servicos-features .feat:active, .servicos-features .feat.active {
+  opacity: 1;
+  -moz-transition: 1.5s all;
+  -webkit-transition: 1.5s all;
+  -o-transition: 1.5s all;
+  transition: 1.5s all;
+}
+/* line 469, ../assets/sass/_default.scss */
+.servicos-features .feat.gym {
+  background: url("../img/gym.jpg") center no-repeat;
+}
+/* line 472, ../assets/sass/_default.scss */
+.servicos-features .feat.restaurant {
+  background: url("../img/restaurant.jpg") center no-repeat;
+}
+/* line 475, ../assets/sass/_default.scss */
+.servicos-features .feat.pool {
+  background: url("../img/pool.jpg") center no-repeat;
+}
+/* line 478, ../assets/sass/_default.scss */
+.servicos-features .feat.parking {
+  background: url("../img/car.jpg") center no-repeat;
+}
+/* line 483, ../assets/sass/_default.scss */
+.servicos-features .detalhes-container {
+  margin-top: 35px;
+  padding: 15px;
+  background-color: #f7f8fa;
+  box-shadow: 0px 3px 0 #f0f1f3;
+}
+/* line 489, ../assets/sass/_default.scss */
+.servicos-features .detalhes-container .box-feat {
+  position: relative;
+  overflow: hidden;
+  max-height: 280px;
+}
+/* line 494, ../assets/sass/_default.scss */
+.servicos-features .detalhes-container .box-feat:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  -moz-transition: 1s all;
+  transition: all 1s;
+}
+/* line 507, ../assets/sass/_default.scss */
+.servicos-features .detalhes-container .box-feat img {
+  width: 100%;
+  height: auto;
+}
+/* line 512, ../assets/sass/_default.scss */
+.servicos-features .detalhes-container .box-feat div.text {
+  color: #FFF;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  height: 100%;
+  padding: 0 25px;
+  position: absolute;
+  top: 35%;
+  z-index: 1;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -moz-transition: 0.8s all;
+  transition: all 0.8s;
+}
+@media (max-width: 991px) {
+  /* line 512, ../assets/sass/_default.scss */
+  .servicos-features .detalhes-container .box-feat div.text {
+    font-size: 20px;
+  }
+}
+@media (max-width: 991px) {
+  /* line 489, ../assets/sass/_default.scss */
+  .servicos-features .detalhes-container .box-feat {
+    margin-top: 20px;
+  }
+}
+/* line 537, ../assets/sass/_default.scss */
+.servicos-features .detalhes-container .absolute-buttons {
+  position: absolute;
+  bottom: -21px;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+}
+/* line 545, ../assets/sass/_default.scss */
+.servicos-features .detalhes-container .absolute-buttons .btn_saiba {
+  padding: 10px 34px;
+  text-align: center;
+  color: #FFF;
+  background-color: #A99269;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  transition: 1s all;
+}
+/* line 555, ../assets/sass/_default.scss */
+.servicos-features .detalhes-container .absolute-buttons .btn_saiba:hover {
+  color: #A99269 !important;
+  border: 1px solid #A99269;
+  background-color: #FFF;
+  text-decoration: none;
+}
+/* line 564, ../assets/sass/_default.scss */
+.servicos-features .detalhes-container .adds {
+  background: url("../img/line.jpg") no-repeat -200px 40px;
+  position: relative;
+  -moz-transition: 0.8s all;
+  -webkit-transition: 0.8s all;
+  -o-transition: 0.8s all;
+  transition: 0.8s all;
+}
+/* line 572, ../assets/sass/_default.scss */
+.servicos-features .detalhes-container .adds h2 {
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  -moz-transition: 0.6s all;
+  -webkit-transition: 0.6s all;
+  -o-transition: 0.6s all;
+  transition: 0.6s all;
+  text-rendering: geometricPrecision;
+}
+/* line 582, ../assets/sass/_default.scss */
+.servicos-features .detalhes-container .adds .detalhes {
+  padding-right: 30px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  -moz-transition: 0.9s all;
+  -webkit-transition: 0.9s all;
+  -o-transition: 0.9s all;
+  transition: 0.9s all;
+  text-rendering: geometricPrecision;
+}
+/* line 595, ../assets/sass/_default.scss */
+.servicos-features .detalhes-container:hover .adds {
+  background-position: 45px 40px;
+}
+@media (max-width: 767px) {
+  /* line 595, ../assets/sass/_default.scss */
+  .servicos-features .detalhes-container:hover .adds {
+    background-position: 15px 40px;
+  }
+}
+/* line 603, ../assets/sass/_default.scss */
+.servicos-features .detalhes-container:hover .box-feat:after {
+  top: 350px;
+}
+/* line 607, ../assets/sass/_default.scss */
+.servicos-features .detalhes-container:hover div.text {
+  top: 350px;
+}
+@media (min-width: 768px) {
+  /* line 612, ../assets/sass/_default.scss */
+  .servicos-features .detalhes-container:hover h2,
+  .servicos-features .detalhes-container:hover .detalhes {
+    transform: matrix(1, 0, 0, 1, 30.1, 0);
+  }
+}
+
+/*****************************
+* RESERVAS
+******************************/
+/* line 627, ../assets/sass/_default.scss */
+.reservas {
+  min-height: 485px;
+  background-color: #1D1D1D;
+  position: fixed;
+  bottom: 50px;
+  width: 100%;
+  z-index: -1;
+  padding: 20px 0;
+}
+@media (max-height: 590px) {
+  /* line 627, ../assets/sass/_default.scss */
+  .reservas {
+    padding: 10px 0 !important;
+    font-size: 13px;
+  }
+}
+@media (max-width: 991px) {
+  /* line 627, ../assets/sass/_default.scss */
+  .reservas {
+    position: static;
+  }
+}
+/* line 645, ../assets/sass/_default.scss */
+.reservas label {
+  color: #A99269;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+/* line 651, ../assets/sass/_default.scss */
+.reservas input,
+.reservas select {
+  font-size: 16px;
+  background-color: #141414;
+  color: #A99269;
+  border: 1px solid #A99269;
+  width: 100%;
+  padding: 6px 12px;
+}
+/* line 661, ../assets/sass/_default.scss */
+.reservas ::-webkit-input-placeholder {
+  color: #A99269;
+}
+/* line 665, ../assets/sass/_default.scss */
+.reservas :-moz-placeholder {
+  /* Firefox 18- */
+  color: #A99269;
+}
+/* line 669, ../assets/sass/_default.scss */
+.reservas ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #A99269;
+}
+/* line 673, ../assets/sass/_default.scss */
+.reservas :-ms-input-placeholder {
+  color: #A99269;
+}
+/* line 677, ../assets/sass/_default.scss */
+.reservas iframe {
+  display: block;
+  margin: auto;
+  background-attachment: fixed;
+  pointer-events: none;
+}
+/* line 683, ../assets/sass/_default.scss */
+.reservas iframe.clicked {
+  pointer-events: auto;
+}
+
+/*****************************
+* FOOTER
+******************************/
+/* line 693, ../assets/sass/_default.scss */
+footer {
+  background: #000;
+  height: 50px;
+  line-height: 50px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+}
+@media (max-width: 991px) {
+  /* line 693, ../assets/sass/_default.scss */
+  footer {
+    position: static;
+  }
+}
+/* line 706, ../assets/sass/_default.scss */
+footer small {
+  color: #FFF;
+  display: inline-block;
+  line-height: normal;
+  vertical-align: middle;
+}
+/* line 714, ../assets/sass/_default.scss */
+footer .social a {
+  color: #A99269;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+/* line 722, ../assets/sass/_default.scss */
+footer .social a:hover {
+  color: #FFF;
+}
+/* line 726, ../assets/sass/_default.scss */
+footer .social a i {
+  padding: 0 5px;
+}
+
+/* line 733, ../assets/sass/_default.scss */
+#backToTop {
+  z-index: 2;
+  background-color: #A99269;
+  padding: 9px 11px 12px;
+  cursor: pointer;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  -webkit-box-shadow: 1px 1px 15px 0px black;
+  -moz-box-shadow: 1px 1px 15px 0px black;
+  box-shadow: 1px 1px 15px 0px black;
+}
+
+/*********************
+	EFEITO BOUNCE
+**********************/
+/* line 751, ../assets/sass/_default.scss */
+span.efeito {
+  -webkit-animation-name: bounce;
+  -webkit-animation-duration: 2.5s;
+  animation-name: bounce;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes bounce {
+  0%,
+   100%,
+   20%,
+   40%,
+   60%,
+   80% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes bounce {
+  0%,
+   100%,
+   20%,
+   40%,
+   60%,
+   80% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
